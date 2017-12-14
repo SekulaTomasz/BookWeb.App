@@ -3,10 +3,10 @@
       <div class="card card-container">
           <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
           <p id="profile-name" class="profile-name-card"></p>
-          <form class="form-signin">
+          <form class="form-signin" (ngSubmit)=login()>
               <span id="reauth-email" class="reauth-email"></span>
-              <input type="login" id="inputLogin" class="form-control" placeholder="Login" required autofocus>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <input type="login" id="inputLogin" class="form-control" name="username" [(ngModel)]="model.username" #username="ngModel" placeholder="Login" required autofocus>
+              <input type="password" id="inputPassword" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required placeholder="Password" required>
               <div id="remember" class="checkbox">
                   <label>
                       <input type="checkbox" value="remember-me"> Remember me
