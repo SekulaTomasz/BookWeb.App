@@ -19,6 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "C:/Users/tomaszsekula/BookWeb.App/node_modules/bootstrap/dist/css/bootstrap-grid.min.css",
+        "C:/Users/tomaszsekula/BookWeb.App/node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
       "scripts": [],
@@ -55,6 +57,14 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {
+      "spec": false
+    },
+    "class": {
+      "spec": false
+    },
+    "service": {
+      "spec": false
+    }
   }
 }
