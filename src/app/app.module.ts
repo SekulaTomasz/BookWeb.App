@@ -16,6 +16,7 @@ import { routing } from './app.routing';
 import { AuthGuard } from './_guards/auth.guard';
 import { AlertService } from './services/alert.service';
 import { AlertComponent } from './alert/alert.component';
+import { RegistrationComponent } from './register/registration.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AlertComponent } from './alert/alert.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    AlertComponent
+    AlertComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
