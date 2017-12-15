@@ -20,6 +20,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "./dist/css/bootstrap-grid.min.css",
+        "./dist/css/bootstrap.min.css",
         "styles.css"
       ],
       "scripts": [],
