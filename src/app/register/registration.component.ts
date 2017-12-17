@@ -14,11 +14,11 @@ import { AlertService } from '../services/alert.service';
 })
 export class RegistrationComponent implements OnInit {
 
-  constructor(private userService: UserService, private route: ActivatedRoute,
-    private router: Router, private alert: AlertService) { }
-
   model: NewUser = new NewUser;
   returnUrl: string;
+
+  constructor(private userService: UserService, private route: ActivatedRoute,
+    private router: Router, private alert: AlertService) { }
 
   ngOnInit() {
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
