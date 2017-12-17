@@ -1,12 +1,13 @@
 <div class="container">
     <div class="card card-container">
       <div>Register</div>
-        <form class="form-signin">
+        <form class="form-signin" (ngSubmit)=register()>
             <span id="reauth-email" class="reauth-email"></span>
-            <input type="login" id="inputLogin" class="form-control" placeholder="Login" required autofocus>
-            <input type="email" id="inputEmail" class="form-control" required placeholder="Email" required>
-            <input type="password" id="inputPassword" class="form-control" required placeholder="Password" required>
+            <input type="login" id="inputLogin" class="form-control" name="userName" [(ngModel)]="model.userName" #username="ngModel" placeholder="Login" required autofocus>
+            <input type="email" id="inputEmail" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required placeholder="Email" required>
+            <input type="password" id="inputPassword" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required placeholder="Password" required>
             <input type="password" id="inputPasswordConfirm" class="form-control" required placeholder="Password" required>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Register</button>
         </form>
     </div>
   </div>

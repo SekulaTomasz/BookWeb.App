@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       },
       // tslint:disable-next-line:no-shadowed-variable
       error => {
-        this.alert.error(error);
+        this.alert.error(error.text());
         this.loading = false;
       });
     }

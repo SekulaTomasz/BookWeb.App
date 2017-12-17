@@ -17,6 +17,7 @@ import { AuthGuard } from './_guards/auth.guard';
 import { AlertService } from './services/alert.service';
 import { AlertComponent } from './alert/alert.component';
 import { RegistrationComponent } from './register/registration.component';
+import { UserService } from './services/user.service';
 
 
 @NgModule({
@@ -25,20 +26,21 @@ import { RegistrationComponent } from './register/registration.component';
     LoginComponent,
     HomeComponent,
     AlertComponent,
-    RegistrationComponent
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
   ],
   providers: [
     AuthService,
     CookieService,
     AuthGuard,
-    AlertService
+    AlertService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
