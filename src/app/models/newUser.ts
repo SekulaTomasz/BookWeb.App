@@ -1,5 +1,4 @@
-export class NewUser
-{
+export class NewUser {
     constructor() {
       this.isEnabled = true;
       this.isLockedOut = false;
