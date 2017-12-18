@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {HttpClientModule, HttpHeaders, HttpParams} from '@angular/common/http';
+import { HttpClientModule, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Http } from '@angular/http/src/http';
 
 
@@ -18,6 +18,8 @@ import { AlertService } from './services/alert.service';
 import { AlertComponent } from './alert/alert.component';
 import { RegistrationComponent } from './register/registration.component';
 import { UserService } from './services/user.service';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+
 
 
 @NgModule({
@@ -27,6 +29,7 @@ import { UserService } from './services/user.service';
     HomeComponent,
     AlertComponent,
     RegistrationComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,4 @@ import { UserService } from './services/user.service';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  constructor() {}
-
- }
+export class AppModule {}

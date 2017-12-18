@@ -1,0 +1,13 @@
+.dropdown-container {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Bottom of button */
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5em 0em;
+}
